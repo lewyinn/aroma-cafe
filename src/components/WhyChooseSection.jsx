@@ -41,6 +41,7 @@ const WhyChooseSection = () => {
             gradient: 'from-[#2A2A2E] to-[#1F1F23]',
         },
     ];
+    
     return (
         <section id='whychoose' className="py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,8 +49,7 @@ const WhyChooseSection = () => {
                     initial={{ opacity: 0, y: 60 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
-                >
+                    transition={{ duration: 0.7, ease: "easeOut" }}>
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-100 font-serif mb-4">
                             Why Choose <span className="text-amber-500">Aroma Cafe</span>
@@ -63,8 +63,7 @@ const WhyChooseSection = () => {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="group relative bg-[#2A2A2E] rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[#2A2A2E]"
-                            >
+                                className="group relative bg-[#2A2A2E] rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-[#2A2A2E] mx-auto max-w-xs sm:max-w-sm md:max-w-none">
                                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-amber-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
                                 <div className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                                     {feature.icon}
